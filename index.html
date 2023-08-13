@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/7e3efebb4d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Memory Cards Game</title>
+</head>
+<body>
+	<header>
+		<h1>Memory Cards Game</h1>
+	</header>
+	<nav>
+		<button class="nav-btn home"> <i class="fa-solid fa-house-chimney"></i> </button>
+		<button class="nav-btn info"> <i class="fa-solid fa-circle-info"></i> </button>
+		<div class="timer"></div>
+	</nav>
+
+	<main>
+		<section class="options">
+			<button class="btn options__easy" data-size="16">EASY</button>
+			<button class="btn options__normal" data-size="32">NORMAL</button>
+			<button class="btn options__hard" data-size="72">HARD</button>
+		</section>
+
+		<article class="modal-wrapper">
+			<div class="info-modal">
+				<span class="close-btn">&times;</span>
+				<ul>
+					<li>Turn over any two cards.</li>
+					<li>If they match, they will stay revealed, if they not, 
+							they will be turned back over.</li>
+					<li>Repeat untill you match all cards.</li>
+					<li>Remember what was on each card and where it was.</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="game-grid">	</article>
+
+		<article class="game-grid">
+		</article>
+		
+		<article class="modal-wrapper">
+			<div class="info-modal" style="margin-top: 10%;">
+				<span class="close-btn end-game">&times;</span>
+				<h1 style="text-align: center;">Congratulations!!</h1>
+				<h2 style="text-align: center;">You have won</h2>
+			</div>
+		</article>
+
+		<article class="modal-wrapper">
+			<div class="info-modal" style="margin-top: 10%;">
+				<span class="close-btn end-game">&times;</span>
+				<h1 style="text-align: center;">GAME OVER!!</h1>
+				<h2 style="text-align: center;">You lose</h2>
+			</div>
+		</article>
+
+	</main>
+	<header></header>
+</body>
+</html>
