@@ -92,6 +92,7 @@ class MemoryCardGame {
 
 	checkEnd = () => {
 		if (this.totalCards != 0) { return; }
+		clearInterval(this.timerInterval);
 		setTimeout(() => { 
 			modals[1].style.display = 'block';
 			new Sound("./audio/claps.mp3").play();
